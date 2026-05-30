@@ -1,0 +1,16 @@
+{
+  "name": "aji_challe",
+  "version": "1.0.0",
+  "description": "this repository was made for hack son on 2024/12/23",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  }
+}

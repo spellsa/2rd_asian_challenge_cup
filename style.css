@@ -1,0 +1,244 @@
+@font-face {
+  font-family: "SourceCodePro";
+  src: url(font/SourceCodePro.otf);
+}
+html {
+  font-family: "SourceCodePro", serif;
+}
+header {
+  position: fixed;
+  z-index: 9999;
+}
+.newContainer {
+  display: flex;
+  height: 100px;
+  align-items: center;
+}
+.file-label {
+  background-color: rgba(255, 207, 94, 0.841);
+  width: 80%;
+  height: auto;
+}
+.file-input {
+  display: none; /* デフォルトのinputを隠す */
+}
+.AddToButton {
+  position: fixed;
+  top: 80%;
+  right: 10%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(45deg, #ff4c4c, #ec8305);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: background 0.3s ease, transform 0.5s ease;
+  border-radius: 50%;
+}
+.AddToButton:hover {
+  background: linear-gradient(45deg, #ff4c4c, #ec8305);
+  transform: scale(1.05) rotate(-10deg);
+}
+.add-img {
+  width: 50px;
+  height: 50px;
+}
+.search-bar {
+  align-items: center;
+  display: flex;
+  height: 45px;
+  width: 90%;
+  border-radius: 30px;
+  box-sizing: border-box;
+  margin: 5px auto;
+  background-color: rgb(247, 247, 247);
+}
+.search-box {
+  font-size: 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: "SourceCodePro";
+}
+.icon {
+  margin-left: 10px;
+  margin-right: 5px;
+  width: 40px;
+  color: black;
+}
+.icon-c {
+  width: 30px;
+}
+.topic {
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  width: 80%;
+  font-size: 60px;
+  color: #333;
+}
+.user-card {
+  text-decoration: none;
+}
+.topic-content {
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+  margin: 10px auto 0;
+  width: 80%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.u-float-right {
+  float: right;
+}
+.u-flex-center {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.data {
+  color: #888;
+  font-size: 12px;
+}
+.card-media {
+  background-color: aliceblue;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  height: 125px;
+  margin-bottom: 25px;
+  transition: all 300ms ease-out;
+  width: 100%;
+}
+.card-media:hover {
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.2);
+}
+.card-media-object {
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  border-radius: 10px;
+}
+.card-media-object:after {
+  content: " ";
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 300ms ease-out;
+  z-index: 10;
+}
+.card-media:hover .card-media-object:after {
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 52%, rgba(0, 0, 0, 0.4) 100%);
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 52%, rgba(0, 0, 0, 0.4) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 52%, rgba(0, 0, 0, 0.4) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+  opacity: 1;
+}
+.card-media-object-tag {
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 2px 7px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.card-media:hover {
+  opacity: 1;
+  transform: translateY(0);
+}
+.card-media-body {
+  float: left;
+  height: 100%;
+  padding: 12px 15px;
+  position: relative;
+  width: 65%;
+}
+.card-media-body-top {
+  display: block;
+}
+.card-media-body-heading {
+  font-weight: bolder;
+  font-size: x-large;
+  display: block;
+  margin-top: 10px;
+}
+.card-media-body-supporting-bottom {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  opacity: 1;
+  padding: 0 15px;
+  transition: all 300ms ease-out;
+  width: 100%;
+}
+.card-media:hover .card-media-body-supporting-bottom {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+.card-media-body-supporting-bottom-text {
+  display: inline-block;
+}
+.card-media-body-supporting-bottom-reveal {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: all 300ms ease-out;
+}
+.card-media:hover .card-media-body-supporting-bottom-reveal {
+  opacity: 1;
+  transform: translateY(0);
+  .post-wrapper {
+    margin: 20px auto;
+
+    width: 60%;
+  }
+  .post {
+    background-color: #ffffff;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .button-i {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    /*cursor: pointer;*/
+  }
+  .button-icon-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+a {
+  cursor: inherit;
+}
+
+.cursor-circle {
+  position: fixed; /* 画面上で固定する */
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  pointer-events: none; /* この要素でクリックを邪魔しないように */
+  transform: translate(-50%, -50%); /* 丸の中心をカーソルの位置に合わせるため */
+}

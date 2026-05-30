@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Aji_challe</title>
+    <meta name="description" content="kali" />
+    <meta name="keywords" content="kali" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="./addFevo/index.html" class="AddToButton"><img src="img/add_people.png" class="add-img" /></a>
+    </header>
+    <main>
+      <div class="search-bar">
+        <i class="icon"><img class="icon-c" src="img/search.png" /></i>
+        <input class="search-box" type="text" placeholder="Search" autocomplete="off" />
+      </div>
+      <div class="topic-content">
+        <!--USER_BLOCK-->
+        <a href="http://127.0.0.1:3000/user_" id="original" class="user-link">
+          <div class="card-media">
+            <!-- body container -->
+            <div class="card-media-body">
+              <div class="card-media-body-top">
+                <!--DATA-->
+                <span class="data">data</span>
+              </div>
+              <!--TITLE-->
+              <span class="card-media-body-heading"><title></title></span>
+              <div class="card-media-body-supporting-bottom">
+                <!--WRITER-->
+                <span class="card-media-body-supporting-bottom-text subtle">writer</span>
+              </div>
+              <div class="card-media-body-supporting-bottom card-media-body-supporting-bottom-reveal">
+                <span class="card-media-body-supporting-bottom-text subtle">testText</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!--/USER_BLOCK-->
+        <div id="newContainer">
+          <label for="fileInput" class="file-label"><p>このタブをタップしてあなただけのマウスカーソルを設定しませんか？</p></label>
+          <input type="file" id="fileInput" class="file-input" accept="image/*" />
+        </div>
+        <div class="cursor-circle" id="cursorCircle"></div>
+        <script src="./script.js"></script>
+        <script>
+          //cancelJump();
+        </script>
+        <script src="./cursor.js"></script>
+      </div>
+    </main>
+  </body>
+</html>

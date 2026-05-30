@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "SourceCodePro";
+  src: url(font/SourceCodePro.otf);
+}
+html {
+  font-family: "SourceCodePro", serif;
+}
+body {
+  background-color: #ffffff; /* 背景を白に設定 */
+  font-family: "SourceCodePro", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* フォームコンテナのスタイル */
+.container {
+  background-color: #ffffff; /* 背景を白に設定 */
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
+  width: 400px; /* 幅を設定 */
+  margin: 50px auto; /* 上下に余白を追加し、中央に配置 */
+}
+/* タイトルのスタイル */
+.container h2 {
+  color: #800080; /* 紫色に設定 */
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* フォームグループのスタイル */
+.form-group {
+  margin-bottom: 15px;
+}
+/* ラベルのスタイル */
+label {
+  display: block;
+  color: #800080; /* 紫色に設定 */
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+/* テキスト入力フィールドのスタイル */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc; /* 灰色のボーダー */
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+/* テキスト入力フィールドのフォーカス時のスタイル */
+input[type="text"]:focus {
+  border-color: #800080; /* フォーカス時に紫色のボーダー */
+  outline: none; /* デフォルトのアウトラインを削除 */
+}
+/* 送信ボタンのスタイル */
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #800080; /* 紫色に設定 */
+  color: #ffffff; /* 文字色を白に設定 */
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+/* 送信ボタンのホバー時のスタイル */
+button[type="submit"]:hover {
+  background-color: #5a005a; /* 少し濃い紫色に変更 */
+}
+/* メッセージ表示のスタイル */
+#message {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: red; /* デフォルトはエラーメッセージ用 */
+}
+/* プレビューセクションのスタイル */
+.preview-container {
+  background-color: #ffffff; /* 背景を白に設定 */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
+  width: 400px; /* フォームと同じ幅に設定 */
+  margin: 20px auto; /* 上下に余白を追加し、中央に配置 */
+}
+/* プレビュータイトルのスタイル */
+.preview-container h2 {
+  color: #800080; /* 紫色に設定 */
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* ユーザーカードのスタイル */
+.user-card {
+  background-color: #f9f9f9; /* カードの背景色 */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.user-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.user-group {
+  color: #800080; /* 紫色に設定 */
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.user-name {
+  color: #333333; /* メインの文字色 */
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.user-main-description {
+  color: #555555; /* サブの文字色 */
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.user-sub-description {
+  color: #777777; /* サブの文字色 */
+  font-size: 14px;
+}
